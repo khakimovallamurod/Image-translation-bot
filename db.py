@@ -1,5 +1,5 @@
 from tinydb import TinyDB
-import requests
+
 tindb = TinyDB('db.json', indent = 4)
 
 def get_models():
