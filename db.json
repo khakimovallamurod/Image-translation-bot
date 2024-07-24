@@ -7,6 +7,30 @@
         "2":{
             "name": "pear",
             "img_url": "https://hidoyat.uz/wp-content/uploads/2020/07/9-12.jpg"
+        },
+        "3":{
+            "name": "banana",
+            "img_url":"https://media.istockphoto.com/id/1291262112/photo/banana.jpg?s=612x612&w=0&k=20&c=Na8FBcsTuhCRyuWLmbCV1FwOkvWLWFeVfQT-pd6tXk8="
+        },
+        "4":{
+            "name": "cherry",
+            "img_url": "https://media.istockphoto.com/id/506627545/photo/cherry-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=xa-4D_CcLiARKWnDKU-blrB0NWHQKpklO7fLswGmbEs="
+        },
+        "5":{
+            "name": "grapes",
+            "img_url":"https://media.istockphoto.com/id/172304886/photo/bunch-of-green-grapes-laying.jpg?s=612x612&w=0&k=20&c=WOCfia6i2586m6NoqhU10CycAXBbGDOXnf7tjjJwnD4="
+        },
+        "6":{
+            "name": "orange",
+            "img_url":"https://t3.ftcdn.net/jpg/02/01/79/54/360_F_201795443_a16jojvPRiobPC96uO7ePHSNzGVoBLbc.jpg"
+        },
+        "7":{
+            "name": "watermelon",
+            "img_url": "https://thumbs.dreamstime.com/b/watermelon-13177659.jpg"
+        },
+        "8":{
+            "name": "pomegranate",
+            "img_url":"https://media.istockphoto.com/id/1397537185/photo/pomegranate-fruit-on-white.jpg?s=612x612&w=0&k=20&c=-vdaHvhADld9S0B7iWfKlCUMT2lcOYLBSNA1bW3p6ZA="
         }
     },
     "vegetables":{
@@ -21,6 +45,26 @@
         "3":{
             "name": "onion",
             "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Onion_on_White.JPG/1200px-Onion_on_White.JPG"
+        },
+        "4":{
+            "name": "carrot",
+            "img_url": "https://t3.ftcdn.net/jpg/02/99/43/48/360_F_299434842_UF1e0k44KUpkdtAEu0XbbPVnTHFuRwAm.jpg"
+        },
+        "5":{
+            "name": "radish",
+            "img_url": "https://wallpapers.com/images/hd/crisp-red-radish-food-photography-765b0lg5pfk7y3ee.jpg"
+        },
+        "6":{
+            "name": "eggplant",
+            "img_url": "https://t4.ftcdn.net/jpg/00/07/62/83/360_F_7628300_1yA2DHJLke9w95H2Gu1AWMjJHLZsEj75.jpg"
+        },
+        "7":{
+            "name": "garlic",
+            "img_url": "https://img.freepik.com/free-photo/close-up-fresh-garlic_144627-34523.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=sph"
+        },
+        "8":{
+            "name": "capsicum",
+            "img_url": "https://www.pngitem.com/pimgs/m/15-151701_green-bell-pepper-bell-pepper-hd-png-download.png"
         }
     },
     "animals":{
@@ -31,6 +75,31 @@
         "2": {
             "name": "cat",
             "img_url": "https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg"
+        },
+        "3":{
+            "name":"wolf",
+            "img_url":"https://t3.ftcdn.net/jpg/00/51/69/94/360_F_51699465_hvdWz7J0kRDWfFwDSNKA5bsXiVTXi8rG.jpg"
+        },
+        "4": {
+            "name": "tiger",
+            "img_url": "https://t3.ftcdn.net/jpg/03/83/46/48/360_F_383464809_VAyaM0bON9NZT1UCPXghp8GhHx56QKqm.jpg"
+        },
+        "5":{
+            "name":"hen",
+            "img_url":"https://t3.ftcdn.net/jpg/05/61/73/66/360_F_561736616_OyX4B0usL0k7UgX2RagwaKRqokCKVdDR.jpg"
+        }, 
+        "6":{
+            "name": "horse",
+            "img_url": "https://t3.ftcdn.net/jpg/03/26/50/04/360_F_326500445_ZD1zFSz2cMT1qOOjDy7C5xCD4shawQfM.jpg"
+        },
+        "7": {
+            "name": "elephant",
+            "img_url": "https://thumbs.dreamstime.com/b/african-elephant-isolated-white-8115112.jpg"
+        },
+        "8":{
+            "name":"bear",
+            "img_url":"https://media.istockphoto.com/id/1017220160/photo/large-carpathian-brown-bear-portrait-in-the-woods-europe-romania.jpg?s=612x612&w=0&k=20&c=nKY-8Np5pOtWJEybyv9EL7x1rnaCDyV4FlJKcfl9A00="
         }
+        
     }
 }
