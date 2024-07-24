@@ -17,7 +17,10 @@ def main():
 
     dp.add_handler(CallbackQueryHandler(handlers.one_model, pattern="model:"))
     dp.add_handler(MessageHandler(Filters.text & ~Filters.command , handlers.handle_message))
+<<<<<<< HEAD
     
+=======
+>>>>>>> 55294a48cfe8b90c4b1af8731e725b81993ac34c
     updater.start_polling()
     updater.idle()
 
