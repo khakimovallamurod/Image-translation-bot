@@ -1,0 +1,36 @@
+{
+    "fruits":{
+        "1":{
+            "name": "apple",
+            "img_url": "https://play-lh.googleusercontent.com/VcpYo0nCh3QqVJT_t7eTkK7xgr1Z9b1PfskQhzn5X1MBKUhQvCX35DCfWqyKoIO4yYsc"
+        },
+        "2":{
+            "name": "pear",
+            "img_url": "https://hidoyat.uz/wp-content/uploads/2020/07/9-12.jpg"
+        }
+    },
+    "vegetables":{
+        "1":{
+            "name": "tomoto",
+            "img_url": "https://t4.ftcdn.net/jpg/03/27/96/23/360_F_327962332_6mb5jQLnTOjhYeXML7v45Hc5eED2GYOD.jpg"
+        },
+        "2":{
+            "name": "potato",
+            "img_url": "https://media.istockphoto.com/id/157430678/photo/three-potatoes.jpg?s=612x612&w=0&k=20&c=qkMoEgcj8ZvYbzDYEJEhbQ57v-nmkHS7e88q8dv7TSA="
+        },
+        "3":{
+            "name": "onion",
+            "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Onion_on_White.JPG/1200px-Onion_on_White.JPG"
+        }
+    },
+    "animals":{
+        "1":{
+            "name": "dog",
+            "img_url": "https://thumbs.dreamstime.com/b/beautiful-happy-reddish-havanese-puppy-dog-sitting-frontal-looking-camera-isolated-white-background-46868560.jpg"
+        },
+        "2": {
+            "name": "cat",
+            "img_url": "https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg"
+        }
+    }
+}
