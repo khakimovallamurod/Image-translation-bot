@@ -13,4 +13,3 @@ def get_one_model(model: str):
     else:
         return []
 
- 

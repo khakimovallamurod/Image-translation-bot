@@ -16,8 +16,7 @@ def main():
     dp.add_handler(MessageHandler(Filters.text("☎️Contact"), handlers.contact))
 
     dp.add_handler(CallbackQueryHandler(handlers.one_model, pattern="model:"))
-    dp.add_handler(MessageHandler(Filters.text & ~Filters.command , handlers.handle_message))
-
+    dp.add_handler(CallbackQueryHandler(handlers.answer_callback, pattern='answer:'))
     updater.start_polling()
     updater.idle()
 
