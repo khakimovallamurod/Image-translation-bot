@@ -101,5 +101,39 @@
             "img_url":"https://media.istockphoto.com/id/1017220160/photo/large-carpathian-brown-bear-portrait-in-the-woods-europe-romania.jpg?s=612x612&w=0&k=20&c=nKY-8Np5pOtWJEybyv9EL7x1rnaCDyV4FlJKcfl9A00="
         }
         
+    },
+    "clothes": {
+        "1":{
+            "name": "shirt",
+            "img_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos%2Fformal-shirt&psig=AOvVaw1aL2XldFMqTZ1CY2rvzkkm&ust=1722011375097000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMj-i7XOwocDFQAAAAAdAAAAABAn"
+        },
+        "2":{
+            "name": "socks",
+            "img_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fsock&psig=AOvVaw2c7AqSjaDsFb8jk-et-uku&ust=1722011561006000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKCV34zPwocDFQAAAAAdAAAAABAJ"
+        },
+        "3":{
+            "name": "trousers",
+            "img_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dblack%2Bpants&psig=AOvVaw30ivaIsrM57KFoCsP48GKm&ust=1722011627250000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCODeoq3PwocDFQAAAAAdAAAAABAQ"
+        },
+        "4":{
+            "name": "dress",
+            "img_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fdress&psig=AOvVaw142WJ5mhIEj5ZMuWB6IFeK&ust=1722011715738000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPCIrtfPwocDFQAAAAAdAAAAABAZ"
+        },
+        "5":{
+            "name": "cap",
+            "img_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fillustrations%2Fblack-baseball-cap-mockup&psig=AOvVaw27PLEnr5KKJ4i3n9tbOYer&ust=1722011803288000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKDbsIPQwocDFQAAAAAdAAAAABAJ"
+        },
+        "6": {
+            "name": "coat",
+            "img_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.123rf.com%2Fclipart-vector%2Ftrench_coat.html&psig=AOvVaw0_0HwhoV1bGxJ0bb06sp4Y&ust=1722011859319000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPD84prQwocDFQAAAAAdAAAAABAY"
+        },
+        "7":{
+            "name": "hat",
+            "img_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinnaxis.com%2F%3Fk%3Dmost-expensive-cowboy-hats-ever-sold-ee-jyln15UZ&psig=AOvVaw1W4DArn8-2VjUr6cMWQ1Ef&ust=1722011926908000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCsgrzQwocDFQAAAAAdAAAAABAJ"
+        },
+        "8":{
+            "name": "sweater",
+            "img_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.donsnab-zahid.com%2F%3Fs%3Dsu%25C3%25A9ter-wikipedia-la-enciclopedia-libre-cc-lKdryLuG&psig=AOvVaw3UTKd7XII8S32es0FOczm4&ust=1722012008285000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJDmluPQwocDFQAAAAAdAAAAABAR"
+        }
     }
 }
