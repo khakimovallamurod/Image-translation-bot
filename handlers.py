@@ -124,6 +124,8 @@ def one_model_yopiqtest(update: Update, context: CallbackContext):
     context.user_data['current_image_index'] = 0
     context.user_data['correct_count'] = 0
     context.user_data['incorrect_count'] = 0
+    context.user_data['image_check'] = ''
+
 
     send_next_image_yopiqtest(update, context)
 
@@ -145,29 +147,38 @@ def send_next_image_yopiqtest(update: Update, context: CallbackContext):
                 caption='Rasmni toping (ingliz tilida)',
             )
             context.user_data['image_name'] = item['name']
-
         context.user_data['current_image_index'] += 1
     else:
-        send_report_yopiqtest(update, context)
+        send_image_end(update, context)
 
 def answer_image(update: Update, context: CallbackContext):
     tex = update.message.text
     image_name = context.user_data.get('image_name', '')
     if tex.lower() == image_name.lower():
+        context.user_data['image_check'] = tex+' ✅\n'
         context.user_data['correct_count'] += 1
+        send_report_yopiqtest(update, context)
     else:
+        context.user_data['image_check'] = tex+ ' ❌ -- ' + image_name + ' ✅\n'
         context.user_data['incorrect_count'] += 1
+        send_report_yopiqtest(update, context)
 
     send_next_image_yopiqtest(update, context)
 
 def send_report_yopiqtest(update: Update, context: CallbackContext):
-    correct_count = context.user_data.get('correct_count', 0)
-    incorrect_count = context.user_data.get('incorrect_count', 0)
-
-    report_text = f"To'g'ri javoblar soni: {correct_count} ta ✅\nXato javoblar soni: {incorrect_count} ta ❌"
+    image_check = context.user_data.get('image_check', '')
+    report_text = f"{image_check}"
 
     update.message.reply_text(
-        text=report_text,
+        text=report_text
+        )
+
+def send_image_end(update: Update, context: CallbackContext):
+    correct_count = context.user_data.get('correct_count', 0)
+    incorrect_count = context.user_data.get('incorrect_count', 0)
+    report_text = f"To'g'ri javoblar soni: {correct_count} ta ✅\nXato javoblar soni: {incorrect_count} ta ❌"
+    update.message.reply_text(
+        text= report_text,
         reply_markup=ReplyKeyboardMarkup(
             [[KeyboardButton(text='Bosh sahifa 🏠')]],
             resize_keyboard=True
