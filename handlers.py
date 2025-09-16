@@ -9,15 +9,15 @@ import time
 def start(update: Update, context: CallbackContext):
     user = update.message.from_user
     update.message.reply_text(
-        text=f"""Assalomu aleykum {user.full_name}. Test turini tanlang""",
+        text=f"""Hello {user.full_name}. Select test type""",
         reply_markup=keyboards.home_keyboard()
     )
 
 def contact(update: Update, context: CallbackContext):
     user = update.message.from_user
     update.message.reply_contact(
-        phone_number="+998938554640",
-        first_name="Xakimov Allamurod",
+        phone_number="+998880674070",
+        first_name="Iskandarov Elzod",
         reply_markup=keyboards.home_keyboard()
     )
 
@@ -72,13 +72,13 @@ def send_next_image(update: Update, context: CallbackContext):
         if update.callback_query:
             sent_message = update.callback_query.message.reply_photo(
                 photo=item['img_url'],
-                caption='Rasmni toping (ingliz tilida)',
+                caption='Find the picture (in Uzbek)',
                 reply_markup=reply_markup
             )
         else:
             sent_message = update.message.reply_photo(
                 photo=item['img_url'],
-                caption='Rasmni toping (ingliz tilida)',
+                caption='Find the picture (in Uzbek)',
                 reply_markup=reply_markup
             )
 
@@ -94,10 +94,10 @@ def answer_callback(update: Update, context: CallbackContext):
 
     if is_correct:
         context.user_data['correct_count'] += 1
-        query.answer(text="To'g'ri javob!")
+        query.answer(text="Correct answer!")
     else:
         context.user_data['incorrect_count'] += 1
-        query.answer(text="Noto'g'ri javob!")
+        query.answer(text="Incorrect answer!")
 
     send_next_image(update, context)
 
@@ -105,14 +105,11 @@ def send_report(update: Update, context: CallbackContext):
     correct_count = context.user_data.get('correct_count', 0)
     incorrect_count = context.user_data.get('incorrect_count', 0)
 
-    report_text = f"To'g'ri javoblar soni: {correct_count} ✅\nXato javoblar soni: {incorrect_count} ❌"
+    report_text = f"Number of correct answers: {correct_count} ✅\nNumber of incorrect answers: {incorrect_count} ❌"
 
     update.callback_query.message.reply_text(
         text=report_text,
-        reply_markup=ReplyKeyboardMarkup(
-            [[KeyboardButton(text='Bosh sahifa 🏠')]],
-            resize_keyboard=True
-        )
+        reply_markup=keyboards.home_keyboard()
         )
 
 
@@ -138,13 +135,13 @@ def send_next_image_yopiqtest(update: Update, context: CallbackContext):
         if update.callback_query:
             sent_message = update.callback_query.message.reply_photo(
                 photo=item['img_url'],
-                caption='Rasmni toping (ingliz tilida)',
+                caption='Find the picture (in Uzbek)',
             )
             context.user_data['image_name'] = item['name']
         else:
             sent_message = update.message.reply_photo(
                 photo=item['img_url'],
-                caption='Rasmni toping (ingliz tilida)',
+                caption='Find the picture (in Uzbek)',
             )
             context.user_data['image_name'] = item['name']
         context.user_data['current_image_index'] += 1
@@ -176,11 +173,8 @@ def send_report_yopiqtest(update: Update, context: CallbackContext):
 def send_image_end(update: Update, context: CallbackContext):
     correct_count = context.user_data.get('correct_count', 0)
     incorrect_count = context.user_data.get('incorrect_count', 0)
-    report_text = f"To'g'ri javoblar soni: {correct_count} ta ✅\nXato javoblar soni: {incorrect_count} ta ❌"
+    report_text = f"Number of correct answers: {correct_count} ✅\nNumber of incorrect answers: {incorrect_count} ❌"
     update.message.reply_text(
         text= report_text,
-        reply_markup=ReplyKeyboardMarkup(
-            [[KeyboardButton(text='Bosh sahifa 🏠')]],
-            resize_keyboard=True
-        )
+        reply_markup=keyboards.home_keyboard()
         )

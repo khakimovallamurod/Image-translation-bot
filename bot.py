@@ -11,7 +11,6 @@ def main():
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler('start', handlers.start))
-    dp.add_handler(MessageHandler(Filters.text('Bosh sahifa 🏠'), handlers.start))
     dp.add_handler(MessageHandler(Filters.text('🔓 Open Test'), handlers.models))
     dp.add_handler(MessageHandler(Filters.text('🔐 Closed Test'), handlers.models_yopiqtest))
     dp.add_handler(MessageHandler(Filters.text("☎️Contact"), handlers.contact))
